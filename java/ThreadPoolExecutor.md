@@ -6,15 +6,7 @@ tags:
 categories:
 - java
 ---
----
-title: LinkedHashMap 底层分析
-date: 2018/02/06 23:01:36 
-categories: 
-- Java 进阶
-tags: 
-- Java
-- LinkedHashMap
----
+
 ## 为什么需要线程池
 ***
 * 线程是稀缺资源，频繁的创建对系统资源消耗较大
