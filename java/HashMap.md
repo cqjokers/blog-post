@@ -6,7 +6,7 @@ tags:
 categories:
 - java
 ---
-## 1.基本组成成员
+## 基本组成成员
 ***
 ```JAVA
 //默认容量,数组长度16
@@ -32,7 +32,7 @@ final float loadFactor;
 ```
 ![](https://i.loli.net/2018/07/09/5b43131ce94bf.png)
 >HashMap 是 Map 的一个实现类，它代表的是一种键值对的数据存储形式,Key 不允许重复出现,但可以储存null键值,在jdk8中其内部是由数组+链表+红黑树来实现
-## 2.构造方法
+## 构造方法
 ***
 ```java
 public HashMap(int initialCapacity, float loadFactor) {
@@ -50,7 +50,7 @@ public HashMap(int initialCapacity, float loadFactor) {
 ```
 HashMap一共有4个构造方法，如果用户没有传入initialCapacity 和loadFactor这两个参数，会使用默认值，`initialCapacity`默认为16，`loadFactory`默认为0.75，初始的时候并没有为`Node`数组分配内存空间，而是在put的时候进行分配
 <!--more-->
-## 3.hash的计算
+## hash的计算
 ***
 ```JAVA
 static final int hash(Object key) {
@@ -62,7 +62,7 @@ static final int hash(Object key) {
 ```JAVA
 (n - 1) & hash
 ```
-## 4.put方法具体实现
+## put方法具体实现
 ***
 ```JAVA
 public V put(K key, V value) {
@@ -126,7 +126,7 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 * 判断当前节点是否为红黑树节点，如果是则按照红黑树节点方式插入，否则执行下面步骤
 * 遍历链表，将要插入的节点放入尾部，需要判断是否需要转换为红黑树，若满足要求则进行转换
 * 最后添加节点后需要判断是否需要进行扩容操作
-## 5.get具体实现
+## get具体实现
 ***
 ```JAVA
 public V get(Object key) {
@@ -162,7 +162,7 @@ final Node<K,V> getNode(int hash, Object key) {
 * 首选对table数组进行校验，判断是否不等于null,长度是否大于0，取出的数据是否不等于null,若条件满足则执行下面步骤
 * 判断上一步取出的节点里的hash与key是否与当前查找的hash，key相等，如果相等则直接返回当前节点，否则继续往下执行
 * 根据第一节点判断是否为红黑树节点，若是则按红黑树方式进行查找，否则遍历链表进行查找，直到找到为止
-## 6.remove具体实现
+## remove具体实现
 ***
 ```JAVA
 public V remove(Object key) {
@@ -221,7 +221,7 @@ final Node<K,V> removeNode(int hash, Object key, Object value,
 * 判断所要移除的节点是否为红黑树节点，若是则按红黑树方式进行移除
 * 上一步若不满足，则判断所要移除的节点是否为首节点，若是则将其后置节点提升为首节点
 * 上一步若不满足，则将所要移除节点的后置节点挂到它前置节点的next上
-## 7.resize方法具体实现
+## resize方法具体实现
 ***
 ```JAVA
 final Node<K,V>[] resize() {
