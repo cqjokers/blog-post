@@ -208,6 +208,7 @@ addWorker执行流程如下：
 >-  判断线程池当前线程数量是否超过上限（corePoolSize 或 maximumPoolSize），如果超过则return false，否则对workerCount+1，继续往下执行
 >- 在线程池的ReentrantLock保证下，向Workers中添加新创建的worker实例，添加完成后解锁，并启动worker线程，如果这几步操作都成功则返回true否则调用addWorkerFailed()逻辑
 ## worker类
+***
 线程池的工作线程通过Woker类实现，在ReentrantLock锁的保证下，把Woker实例添加到HashSet后，并启动Woker中的线程，其中Worker类设计如下：
 ```java
 private final class Worker
