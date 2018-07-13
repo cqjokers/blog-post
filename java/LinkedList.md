@@ -1,5 +1,5 @@
 ---
-title: LinkedList
+title: LinkedList底层分析
 date: 2018-07-11 16:26:32
 tags:
 - list

@@ -29,6 +29,7 @@ transient LinkedHashMap.Entry<K,V> tail;
 final boolean accessOrder;
 ```
 由于LinkedHashMap继承了HashMap所以其内部属性就比较少，通过head,tail来保存首尾元素，静态类Entry继承Node,并扩展为一个双向链表，通过`accessOrder`我们可以控制元素的顺序
+<!--more-->
 ## 元素创建
 ***
 ```JAVA
