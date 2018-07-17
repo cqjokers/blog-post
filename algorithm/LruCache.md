@@ -1,5 +1,5 @@
 ---
-title: LruCache的实现
+title: LruCache的简单实现
 date: 2018-07-17
 tags:
 - cache
