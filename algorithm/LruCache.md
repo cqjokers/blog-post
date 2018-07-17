@@ -31,7 +31,7 @@ public class LRUHashMap<K,V> extends LinkedHashMap<K, V> {
 ```
 由于`LinkedHashMap`是线程不安全的，所以要想在多线程环境使用可以使用 Collections.synchronizedMap()方法实现线程安全操作
 <!--more-->
-## 自己实现一个LRU缓存
+* 自己实现一个LRU缓存
 ```JAVA
 public class LRUCache<K,V> {
 	//缓存最大数目
