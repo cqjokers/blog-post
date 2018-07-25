@@ -2,9 +2,9 @@
 title: volatile关键字
 date: 2018-07-24
 tags:
- -volatile
+- volatile
 categories:
- -java
+- java
 ---
   一个变量被volatile修饰之后，则具备了两层含义：
 * 可见性
