@@ -1,11 +1,12 @@
 ---
 title: LruCache的简单实现
-date: 2018-07-17
 tags:
-- cache
-- LRU
+  - cache
+  - LRU
 categories:
-- algorithm
+  - algorithm
+abbrlink: 40b4c498
+date: 2018-07-17 00:00:00
 ---
 由于前面分析过[LinkedHashMap](https://cqjokers.top/2018/07/12/java/LinkedHashMap/)，知道其内部运用了一个双向链表结构来存储数据，所以能够保证数据的有序性，并且源代码里预留了三个方法，我们可以基于它们来实现一个LRU缓存。
 ```JAVA

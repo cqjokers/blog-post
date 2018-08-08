@@ -1,10 +1,11 @@
 ---
 title: java线程池分析
-date: 2018-07-05 16:22:41
-tags: 
-- pool
+tags:
+  - pool
 categories:
-- java
+  - java
+abbrlink: bdea3b94
+date: 2018-07-05 16:22:41
 ---
 
 ## 为什么需要线程池

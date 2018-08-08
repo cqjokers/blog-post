@@ -1,8 +1,9 @@
 ---
 title: JAVA类加载机制
-date: 2018-07-30
 categories:
-- java
+  - java
+abbrlink: 9fd04b7
+date: 2018-07-30 00:00:00
 ---
 ![](https://upload-images.jianshu.io/upload_images/13023122-65d6e90207ca50b4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)类从被加载到虚拟机内存中开始，到卸载出内存为止，它的整个生命周期包括：加载、验证、准备、解析、初始化、卸载7个阶段。类的加载过程必须按照这种顺序按部就班地开始，而解析阶段则不一定：它在某些情况下可以在初始化阶段之后再开始,这是为了支持Java语言语言的运行时绑定（也叫动态绑定和晚期绑定）。 
 ## 加载

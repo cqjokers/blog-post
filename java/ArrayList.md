@@ -1,10 +1,11 @@
 ---
 title: ArrayList底层分析
-date: 2018-07-10 17:08:41
 tags:
-- list
+  - list
 categories:
-- java
+  - java
+abbrlink: fdeabae9
+date: 2018-07-10 17:08:41
 ---
 ## ArrayList简介
 ***

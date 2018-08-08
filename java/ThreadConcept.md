@@ -1,11 +1,12 @@
 ---
 title: JAVA并发编程中的三个概念
-date: 2018-07-20
 tags:
-- thread
-- volatile
+  - thread
+  - volatile
 categories:
-- java
+  - java
+abbrlink: 6208b7fd
+date: 2018-07-20 00:00:00
 ---
 ## 原子性
 ***

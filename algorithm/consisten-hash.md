@@ -1,11 +1,12 @@
 ---
 title: 一致性Hash分析
-date: 2018-07-18
 tags:
-- hash
-- algorithm
+  - hash
+  - algorithm
 categories:
-- algorithm
+  - algorithm
+abbrlink: 170f63c6
+date: 2018-07-18 00:00:00
 ---
 ## 场景描述
 在开发中经常会用到缓存来减轻数据库的压力，比较常见的就是使用redis，但当数据达到一定量时一台缓存服务器已经无法满足现在的需求，所以需要进行分布存储，假设现在有3台缓存服务器，那么该如何将数据均匀的分布到这3台服务器上了。

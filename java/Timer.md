@@ -1,10 +1,11 @@
 ---
 title: Timer底层分析
-date: 2018-07-14 22:24:08
 tags:
-- timer
+  - timer
 categories:
-- java
+  - java
+abbrlink: fa474e95
+date: 2018-07-14 22:24:08
 ---
 Timer是jdk1.3中自带的一种线程调度任务的工具。可以执行一个只调度一次的任务也可以重复调度一个一定间隔时间的任务。
 ## 成员变量

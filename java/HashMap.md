@@ -1,10 +1,11 @@
 ---
 title: HashMap底层分析
-date: 2018-07-09 18:22:41
-tags: 
-- HashMap
+tags:
+  - HashMap
 categories:
-- java
+  - java
+abbrlink: f4fc22b5
+date: 2018-07-09 18:22:41
 ---
 ## 基本组成成员
 ***

@@ -1,10 +1,11 @@
 ---
 title: LinkedHashMap底层分析
-date: 2018-07-12 17:37:34
 tags:
-- map
+  - map
 categories:
-- java
+  - java
+abbrlink: 87d7104e
+date: 2018-07-12 17:37:34
 ---
 ## 简介
 ***

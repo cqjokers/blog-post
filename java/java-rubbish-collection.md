@@ -1,8 +1,9 @@
 ---
 title: JAVA垃圾回收机制
-date: 2018-07-26
 categories:
-- java
+  - java
+abbrlink: 40a57016
+date: 2018-07-26 00:00:00
 ---
 围绕三个点进行说明：
 * 哪些对象需要回收

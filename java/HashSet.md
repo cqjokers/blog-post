@@ -1,10 +1,11 @@
 ---
 title: HashSet原理分析
-date: 2018-07-15 14:59:20
 tags:
-- set
+  - set
 categories:
-- java
+  - java
+abbrlink: e40c8608
+date: 2018-07-15 14:59:20
 ---
 ## 概述
 HashSet实现了Set接口，由哈希表（实际上是一个HashMap实例）支持。它不保证set 的迭代顺序；它并不保证随着时间的推移，秩序将保持不变。此类允许使用null元素,是一个不允许存储重复元素的集合

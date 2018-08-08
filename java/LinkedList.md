@@ -1,10 +1,11 @@
 ---
 title: LinkedList底层分析
-date: 2018-07-11 16:26:32
 tags:
-- list
+  - list
 categories:
-- java
+  - java
+abbrlink: 79e7a99b
+date: 2018-07-11 16:26:32
 ---
 ## 简介
 ***
