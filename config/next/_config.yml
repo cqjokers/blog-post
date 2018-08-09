@@ -156,10 +156,10 @@ links_title: 友情链接
 #links_layout: block
 links_layout: inline
 links:
-  Title: http://example.com/
-  Title1: http://example.com/
-  Title2: http://example.com/
-  Title3: http://example.com/
+  柒's Blog: https://blog.52itstyle.com/
+  纯洁的微笑: http://www.ityouknow.com/
+  #Title2: http://example.com/
+  #Title3: http://example.com/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
