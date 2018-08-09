@@ -1,10 +1,11 @@
 ---
 title: Spring Boot (一)工程构建
-date: 2018-08-08
 tags:
-- spring boot
+  - spring boot
 categories:
-- SpringBoot
+  - SpringBoot
+abbrlink: 170f521
+date: 2018-08-08 00:00:00
 ---
 ![](https://i.loli.net/2018/08/08/5b6abd5c099db.png?300x600)
 # 前言
@@ -24,6 +25,7 @@ pom.xml是整个maven的核心配置文件，里面有对项目的描述和项�
 # 初次运行
 进入`SblApplication`中右键运行该项目，如何在控制台输出以下信息则代表项目已经运行成功，如下图所示：![](https://i.loli.net/2018/08/08/5b6aac7b65e25.png)这里可能会有些疑问，我们没有配置WEB容器为什么能够运行起来，观看控制台的输出可以看到Starting Servlet Engine:Apache Tomcat/8.5.32说明其实也是通过Tomcat来运行的，只是SpringBoot帮我们省去了这一步的操作，因为SpringBoot内置了Tomcat。现在我们通过浏览器访问看看会得到什么样的结果，结果如下图所示：![](https://i.loli.net/2018/08/08/5b6aae48cd6c0.png)这里得到的只是一个错误页面
 # 惯例HelloWorld
-在sbl包下面创建一个controller为名字的包用于存放控制器，包创建好后再创建一个`IndexController`的类，在类上我们使用`@RestController`注解来声明该类是一个访问控制器，在该类中创建一个index方法，并配置一个`@RequestMapping`注解来声明它，`@RequestMapping`中的默认参数写成"/index",方法体中直接返回"HelloWorld"字符串，这样我们就可以通过http://localhost:8080/index访问到该方法，代码如下图所示：![](https://i.loli.net/2018/08/08/5b6ab4c318c1d.png)通过浏览器访问http://localhost:8080/index会看到页面上输出Hello World就说明已经成功了。
+在sbl包下面创建一个controller为名字的包用于存放控制器，包创建好后再创建一个`IndexController`的类，在类上我们使用`@RestController`注解来声明该类是一个访问控制器，在该类中创建一个index方法，并配置一个`@RequestMapping`注解来声明它，`@RequestMapping`中的默认参数写成"/index",方法体中直接返回"HelloWorld"字符串，这样我们就可以通过http://localhost:8080/index访问到该方法，代码如下图所示：
+![](https://i.loli.net/2018/08/08/5b6ab4c318c1d.png)通过浏览器访问http://localhost:8080/index会看到页面上输出Hello World就说明已经成功了。
 # 总结
 本文主要通过Spring Boot简单特性来完成了第一个"Hello Word"web应用程序的搭建，从中可以看出Spring Boot在搭建一个项目整合组件方面很成熟，这就有效的提高团队开发效率大减少了开发人员上手周期。由于本人未接触过Spring Boot文章中若有不对的地方还请指出，写文章的目的在于对自己学习的一个记录以及对自己的一个提升。
