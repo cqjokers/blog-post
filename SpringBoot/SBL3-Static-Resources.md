@@ -1,10 +1,10 @@
 ---
-title: SpringBoot学习|(三)静态资源处理
+title: Spring Boot (三)静态资源处理
 tags:
   - spring boot
 categories:
   - SpringBoot
-abbrlink: e10179ef
+abbrlink: ee362fc5
 date: 2018-08-10 00:00:00
 ---
 ![](https://i.loli.net/2018/08/10/5b6d18f56c5e9.jpg)
